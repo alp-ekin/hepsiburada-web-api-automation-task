@@ -1,0 +1,30 @@
+HepsiburadaTest concept file
+
+# <url> web sayfasını aç.
+* <url> url'ine git
+* "2" saniye bekle
+
+# Hepsiburada sayfasının açıldığını doğrula.
+* Sayfanın başlığı Hepsiburada mı?
+
+# Search alanında <search> ürününü ara.
+* "3" saniye bekle
+* Search kutusuna tıkla
+* "3" saniye bekle
+* Search kutusuna <search> yaz
+
+# Sırala alanında En iyi değerlendirme seçimi yapılır.
+* Sayfa aşağıya kaydırılır.
+* "//div[@class='arrowUpOrange']" xpath'li elemente tıkla
+* "//div[text()='En yeni değerlendirme']" xpath'li elemente tıkla
+
+# İlk sıradaki değerlendirme için ThumbsUp tıklanır.
+* Sayfa aşağıya kaydırılır.
+* "(//div[starts-with(@class,'thumbsUp')])[1]" xpath'li elemente tıkla
+
+# <text> yazısının geldiği kontrol edilir.
+* "(//div[starts-with(@class,'thumbsUp')])[1]/../../../../../div[2]/span" xpath'li elementin texti <text> mi?
+* "3" saniye bekle
+
+
+

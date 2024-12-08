@@ -1,0 +1,53 @@
+[
+  {
+    "testId": 1,
+    "test-name": "create booking",
+    "request": {
+      "header": {
+        "Content-Type": "application/json",
+        "Accept": "*/*"
+      },
+      "body": {
+        "firstname":"Hepsi",
+        "lastname":"Burada",
+        "totalprice":500,
+        "depositpaid":true,
+        "bookingdates":
+          {"checkin":"2025-02-01","checkout":"2025-02-05"},
+        "additionalneeds":"Extra bed"
+      }
+    },
+    "method": "post",
+    "path": "",
+    "response": {
+      "contentType": "application/json; charset=utf-8",
+      "statusCode": 200
+    }
+  },
+  {
+    "testId": 2,
+    "test-name": "login with invalid credential",
+    "request": {
+      "header": {
+        "Content-Type": "application/json",
+        "Accept": "*/*"
+      },
+      "body": null
+    },
+    "method": "get",
+    "path": "",
+    "response": {
+      "contentType": "application/json; charset=utf-8",
+      "statusCode": 200
+    },
+    "body": {
+      "firstname":"Hepsi",
+      "lastname":"Burada",
+      "totalprice":500,
+      "depositpaid":true,
+      "bookingdates":
+        {"checkin":"2025-02-01","checkout":"2025-02-05"},
+      "additionalneeds":"Extra bed"
+  }
+  }
+  ]

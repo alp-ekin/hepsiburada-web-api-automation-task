@@ -1,0 +1,1 @@
+var index = {"Tags":{},"Specs":{"Hepsiburada QA Study Case":["specs/Scenarios/HepsiburadaTest.html"]}};
